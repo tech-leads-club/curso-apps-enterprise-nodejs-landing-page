@@ -23,9 +23,8 @@ function Header() {
             </span>{' '}
             QUE ESCALA.
           </p>
-
         </div>
-          <GradientLine />
+        <GradientLine />
 
         <p className='mt-2.5 text-12 text-subtitle sm:text-14 lg:text-17 2xl:text-20'>
           Desenvolver software que escala não precisa ser complexo.
@@ -57,7 +56,7 @@ function Header() {
           tempo.
         </p>
 
-        <p className=' text-15 text-center max-w-[345px] sm:text-20 lg:text-25 2xl:text-30 2xl:max-w-[1600px]'>
+        <p className=' text-15 text-center max-w-[345px] sm:text-20 sm:max-w-[760px] lg:text-25 lg:max-w-[1100px] 2xl:text-30 2xl:max-w-[1600px]'>
           Entender profundamente sobre linguagens e padrões de arquitetura e
           desenvolvimento é crucial, mas saber quando{' '}
           <span className='bg-blueBox text-white'>aplicar é essencial.</span>
