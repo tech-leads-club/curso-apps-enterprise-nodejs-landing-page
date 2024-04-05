@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        learn: '1400px',
+      },
       height: {
         tlCommunityBase: '500px',
         tlCommunityXXL: '650px',

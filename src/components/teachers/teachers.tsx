@@ -2,7 +2,6 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import './carousel.css'
-// import { A11y, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import DevLabCastPhoto from '../../assets/devlabcast.jpg'
 import WaldemarPhoto from '../../assets/waldemar.jpg'
@@ -79,21 +78,21 @@ const Teachers = () => {
       >
         <SwiperSlide>
           <img
-            className='max-w-full h-full rounded-3xl'
+            className='w-full h-full rounded-3xl'
             src={WillianWaldemarPhoto}
             alt=''
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className='max-w-full h-full rounded-3xl'
+            className='w-full h-full rounded-3xl'
             src={DevLabCastPhoto}
             alt=''
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className='max-w-full h-full rounded-3xl'
+            className='w-full h-full rounded-3xl'
             src={YoutubePhoto}
             alt=''
           />
