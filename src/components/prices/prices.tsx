@@ -1,7 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { A11y, Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import './carousel.css'
+import LineCircle from '../icons/LineCircle'
 
 const slides = [
   {
@@ -34,55 +35,50 @@ const Prices = () => {
         Quanto antes você fizer parte dessa jornada,{' '}
         <span className='bg-blueBox text-white'>mais barato será!</span>
       </p>
-      <div className='max-w-[220px] md:hidden'>
-        <Swiper
-          centeredSlides={true}
-          modules={[Navigation, Pagination, A11y]}
-          spaceBetween={10}
-          slidesPerView={1}
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide key={index} className=''>
-              <div className={`w-[220px] pt-7 rounded-lg overflow-hidden ${slide.isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody '}`}>
-                <p className={`mb-2.5 px-4 text-15 text-center text-phase ${slide.isAvailable ? '' : ''}`}>
-                  {slide.phase}
-                </p>
-                <p className='px-4 text-11'>{slide.title}</p>
-                <div className='mt-3 px-4 flex flex-col gap-1.5 text-11'>
-                  {slide.points.map((point, index) => (
-                    <p key={index} className={`pl-4 py-1 rounded-md shadow-slideBP ${slide.isAvailable ? '' : 'text-notAvailable'}`}>
-                      {point}
-                    </p>
-                  ))}
-                </div>
-                <p className={`mt-14 py-4 text-10 text-center text-white ${slide.isAvailable ? 'bg-available' : 'bg-notAvailableFooter'}`}>
-                  {slide.isAvailable ? 'DISPONÍVEL' : 'INDISPONÍVEL'}
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      <div className='hidden md:flex gap-3'>
+      <Swiper
+        className='max-w-[921px]'
+        spaceBetween={10}
+        centeredSlides={true}
+        slidesPerView={1.2}
+        breakpoints={{
+          680: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            centeredSlides: false
+          },
+        }}
+      >
         {slides.map((slide, index) => (
-          <div key={index} className={`w-[220px] pt-7 rounded-lg overflow-hidden lg:w-[297px] ${slide.isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}>
-            <p className={`mb-2.5 px-4 text-15 text-center lg:text-20 ${slide.isAvailable ? 'text-phase' : 'text-notAvailable'}`}>
-              {slide.phase}
-            </p>
-            <p className='px-4 text-11 lg:text-15'>{slide.title}</p>
-            <div className='mt-3 px-4 flex flex-col gap-1.5 text-11 lg:text-15 lg:mt-4 text-bullets'>
-              {slide.points.map((point, index) => (
-                <p key={index} className={`pl-4 py-1 rounded-md shadow-slideBP lg:pl-6  ${slide.isAvailable ? '' : 'text-notAvailable'}`}>
-                  {point}
-                </p>
-              ))}
+          <SwiperSlide key={index}>
+            <div
+              className={`min-w-[220px] pt-7 rounded-lg overflow-hidden md:max-w-[297px] ${slide.isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}
+            >
+              <p
+                className={`mb-2.5 px-4 text-15 text-center lg:text-20 ${slide.isAvailable ? 'text-phase' : 'text-notAvailable'}`}
+              >
+                {slide.phase}
+              </p>
+              <p className='max-w-[90%] px-4 text-11 lg:text-15'>{slide.title}</p>
+              <div className='mt-3 px-4 flex flex-col gap-1.5 text-11 lg:text-15 lg:mt-4 text-bullets'>
+                {slide.points.map((point, index) => (
+                  <p
+                    key={index}
+                    className={`pl-4 py-1 rounded-md shadow-slideBP lg:pl-6  ${slide.isAvailable ? '' : 'text-notAvailable'}`}
+                  >
+                    {point}
+                  </p>
+                ))}
+              </div>
+              <p
+                className={`mt-14 py-4 text-10 text-center text-white lg:mt-16 ${slide.isAvailable ? 'bg-available' : 'bg-notAvailableFooter'}`}
+              >
+                {slide.isAvailable ? 'DISPONÍVEL' : 'INDISPONÍVEL'}
+              </p>
             </div>
-            <p className={`mt-14 py-4 text-10 text-center text-white lg:mt-16 ${slide.isAvailable ? 'bg-available' : 'bg-notAvailableFooter'}`}>
-              {slide.isAvailable ? 'DISPONÍVEL' : 'INDISPONÍVEL'}
-            </p>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+        <LineCircle />
+      </Swiper>
       <div className='flex flex-col gap-3 mt-4 items-center'>
         <p className='text-center text-12 sm:text-14 lg:text-17 2xl:text-20'>
           Compre o acesso anual a todas as fases por apenas R$000,00.

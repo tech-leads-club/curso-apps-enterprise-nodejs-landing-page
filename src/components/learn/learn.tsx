@@ -4,6 +4,7 @@ import NodePhoto from '../../assets/node_photo.jpg'
 import PatternsPhoto from '../../assets/patterns.jpg'
 import UnitTestPhoto from '../../assets/unit_test_photo.jpg'
 import VersusPhoto from '../../assets/versus_photo.jpg'
+import ArrowIcon from '../icons/arrow'
 
 const learnTexts = [
   {

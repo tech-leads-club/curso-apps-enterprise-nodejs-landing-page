@@ -1,6 +1,8 @@
 import 'swiper/css'
+import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { A11y, Navigation, Pagination } from 'swiper/modules'
+import './carousel.css'
+// import { A11y, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import DevLabCastPhoto from '../../assets/devlabcast.jpg'
 import WaldemarPhoto from '../../assets/waldemar.jpg'
@@ -35,7 +37,7 @@ const Teachers = () => {
         {teachersData.map((teacher) => (
           <div
             key={teacher.name}
-            className='flex flex-col items-center w-80 text-center bg-white rounded-2xl relative lg:w-110 2xl:w-700'
+            className='flex flex-col flex-1 items-center min-w-72 max-w-788 text-center bg-white rounded-2xl relative '
           >
             <div className='bg-white rounded-full absolute m-auto w-28 -top-8 lg:w-40 lg:-top-12 2xl:w-60 2xl:-top-20'>
               <div className='flex flex-col items-center justify-center p-1.5'>
@@ -63,30 +65,40 @@ const Teachers = () => {
       </div>
       <div className='flex flex-col items-center text-center'>
         <p className='text-white text-15 mt-8 mb-3.5'>TEXTO SOBRE AS IMAGENS</p>
-        <div className='w-[375px] md:hidden '>
-          <Swiper
-            spaceBetween={10}
-            centeredSlides={true}
-            modules={[Navigation, Pagination, A11y]}
-            slidesPerView={1}
-          >
-            <SwiperSlide>
-              <img className='w-90 rounded-3xl' src={WillianWaldemarPhoto} alt='' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img className='w-90 rounded-3xl' src={DevLabCastPhoto} alt='' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img className='w-90 rounded-3xl' src={YoutubePhoto} alt='' />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div className='hidden md:flex gap-2 2xl:gap-4'>
-          <img className='max-w-56 lg:max-w-[310px] 2xl:max-w-[475px] rounded-3xl' src={WillianWaldemarPhoto} alt='' />
-          <img className='max-w-56 lg:max-w-[310px] 2xl:max-w-[475px] rounded-3xl' src={DevLabCastPhoto} alt='' />
-          <img className='max-w-56 lg:max-w-[310px] 2xl:max-w-[475px] rounded-3xl' src={YoutubePhoto} alt='' />
-        </div>
       </div>
+      <Swiper
+        className='max-w-[1632px]'
+        slidesPerView={1.15}
+        spaceBetween={30}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
+      >
+        <SwiperSlide>
+          <img
+            className='max-w-full h-full rounded-3xl'
+            src={WillianWaldemarPhoto}
+            alt=''
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className='max-w-full h-full rounded-3xl'
+            src={DevLabCastPhoto}
+            alt=''
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className='max-w-full h-full rounded-3xl'
+            src={YoutubePhoto}
+            alt=''
+          />
+        </SwiperSlide>
+      </Swiper>
     </section>
   )
 }
