@@ -38,15 +38,19 @@ const learnTexts = [
 
 const Learn = () => {
   return (
-    <section className='pt-12 lg:pt-16 2xl:pt-24'>
-      <div className='flex flex-col items-center bg-grayBox shadow-buyBtn'>
-        <div className='bg-white max-w-[1400px] flex justify-center learn:-mt-5 shadow-buyBtn'>
-          <div className='bg-darkBox text-center text-white text-15 max-w-[1400px]border border-solid border-grayBorder border-1 sm:text-20 lg:text-25 2xl:text-40 learn:-mt-4'>
-            <p>O QUE VOCÊ VAI APRENDER</p>
-          </div>
-        </div>
+    <section className='relative sec flex flex-col items-center bg-grayBox'>
+      {/* <div className='flex flex-col items-center bg-grayBox shadow-buyBtn'> */}
+      {/* <div className='bg-white max-w-[1400px] flex justify-center learn:-mt-5 shadow-buyBtn'> */}
+      {/* <div className='bg-darkBox text-center text-white text-15 max-w-[1400px]border border-solid border-grayBorder border-1 sm:text-20 lg:text-25 2xl:text-40 learn:-mt-4 p-3'>
+        <p>O QUE VOCÊ VAI APRENDER</p>
+      </div> */}
+      {/* </div> */}
+      <div className='bg-darkBox text-center h-[50px] text-white learn-title flex flex-col items-center justify-center absolute top-[-50px] z-2'>
+        <p>O QUE VOCÊ VAI APRENDER</p>
+      </div>
+      <div className='max-w-[900px] w-full section-container shadow-md'>
         <Swiper
-          className='bg-white pl-5 pb-8 lg:pl-0 learn:px-16 learn:pb-20 max-w-[1400px]'
+          // className='bg-white pl-5 pb-8 lg:pl-0 learn:px-16 learn:pb-20 max-w-[900px]'
           navigation={true}
           modules={[Navigation]}
           slidesPerView={3}
@@ -54,10 +58,11 @@ const Learn = () => {
           breakpoints={{
             640: {
               slidesPerView: 'auto',
+              navigation: true,
             },
-            1024: {
-              navigation: false
-            }
+            // 1024: {
+            //   navigation: false,
+            // },
           }}
         >
           {learnTexts.map((item, index) => (
@@ -78,6 +83,7 @@ const Learn = () => {
           ))}
         </Swiper>
       </div>
+      {/* </div> */}
     </section>
   )
 }
