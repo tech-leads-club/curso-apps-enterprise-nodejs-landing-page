@@ -8,5 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-prices .swiper-slide {
   flex: 1;
 }

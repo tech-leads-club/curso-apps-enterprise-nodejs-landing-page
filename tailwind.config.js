@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         learn: '1400px',
+        prices: '680px',
       },
       height: {
         tlCommunityBase: '500px',

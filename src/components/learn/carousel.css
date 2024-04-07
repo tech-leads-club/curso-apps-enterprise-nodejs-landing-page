@@ -19,6 +19,12 @@
   background-image: url('../../assets/previous-btn.png');
 }
 
+@media (min-width: 917px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -29,15 +35,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
-.learn-title {
-  z-index: 2;
-}
 .section-container {
   background: #fff;
-  padding: 2rem;
   position: relative;
 }
 
@@ -50,4 +51,8 @@
   left: 0;
   background: #fff;
   box-shadow: 0 -3px 7px -2px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-learn .swiper-slide {
+  flex: 1;
 }

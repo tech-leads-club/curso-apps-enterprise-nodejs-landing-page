@@ -38,31 +38,21 @@ const learnTexts = [
 
 const Learn = () => {
   return (
-    <section className='relative sec flex flex-col items-center bg-grayBox'>
-      {/* <div className='flex flex-col items-center bg-grayBox shadow-buyBtn'> */}
-      {/* <div className='bg-white max-w-[1400px] flex justify-center learn:-mt-5 shadow-buyBtn'> */}
-      {/* <div className='bg-darkBox text-center text-white text-15 max-w-[1400px]border border-solid border-grayBorder border-1 sm:text-20 lg:text-25 2xl:text-40 learn:-mt-4 p-3'>
-        <p>O QUE VOCÊ VAI APRENDER</p>
-      </div> */}
-      {/* </div> */}
-      <div className='bg-darkBox text-center h-[50px] text-white learn-title flex flex-col items-center justify-center absolute top-[-50px] z-2'>
+    <section className='relative mt-5  2xl:mt-10 flex flex-col items-center bg-grayBox'>
+      <div className='bg-darkBox text-center text-15 sm:text-20 lg:text-25 2xl:text-40 py-2 px-4 sm:py-3 sm:px-5 lg:py-4 lg:px-8 border border-solid border-grayBorder border-1 -top-11 sm:-top-12 lg:-top-14 2xl:-top-16  text-white z-[2] flex flex-col items-center justify-center absolute'>
         <p>O QUE VOCÊ VAI APRENDER</p>
       </div>
-      <div className='max-w-[900px] w-full section-container shadow-md'>
+      <div className='swiper-learn max-w-[1400px] w-full section-container shadow-md'>
         <Swiper
-          // className='bg-white pl-5 pb-8 lg:pl-0 learn:px-16 learn:pb-20 max-w-[900px]'
+          className='pb-12 pl-5 pt-5 sm:pt-7 lg:px-8 lg:pt-12 lg:pb-20 2xl:pt-20 2xl:pb-28'
           navigation={true}
           modules={[Navigation]}
-          slidesPerView={3}
+          slidesPerView={'auto'}
           spaceBetween={30}
           breakpoints={{
-            640: {
-              slidesPerView: 'auto',
-              navigation: true,
-            },
-            // 1024: {
-            //   navigation: false,
-            // },
+            862: {
+              slidesPerView: 6
+            }
           }}
         >
           {learnTexts.map((item, index) => (
@@ -83,7 +73,6 @@ const Learn = () => {
           ))}
         </Swiper>
       </div>
-      {/* </div> */}
     </section>
   )
 }

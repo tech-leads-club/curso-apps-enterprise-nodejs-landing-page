@@ -2,7 +2,7 @@
 const LineCircle = () => {
   return (
     <svg
-      className="hidden md:flex w-[95%] mt-4"
+      className="hidden prices:flex w-[95%] mt-4"
       viewBox='0 0 840 20'
       shape-rendering='geometricPrecision'
       text-rendering='geometricPrecision'

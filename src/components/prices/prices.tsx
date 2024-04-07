@@ -27,7 +27,7 @@ const slides = [
 
 const Prices = () => {
   return (
-    <section className='flex flex-col items-center px-5'>
+    <section className='flex flex-col items-center px-5 swiper-prices'>
       <p className='bg-darkBox text-white text-center py-2 px-5 border border-solid border-grayBorder border-1 sm:text-20 sm:-top-6 lg:text-25 2xl:text-40 2xl:-top-8'>
         E QUANTO CUSTA?
       </p>
