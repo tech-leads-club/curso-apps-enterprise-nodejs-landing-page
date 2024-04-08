@@ -27,11 +27,11 @@ const slides = [
 
 const Prices = () => {
   return (
-    <section className='flex flex-col items-center px-5 swiper-prices'>
-      <p className='bg-darkBox text-white text-center py-2 px-5 border border-solid border-grayBorder border-1 sm:text-20 sm:-top-6 lg:text-25 2xl:text-40 2xl:-top-8'>
+    <section className='swiper-prices flex flex-col items-center px-5'>
+      <p className='border-1 border border-solid border-grayBorder bg-darkBox px-5 py-2 text-center text-white sm:-top-6 sm:text-20 lg:text-25 2xl:-top-8 2xl:text-40'>
         E QUANTO CUSTA?
       </p>
-      <p className='mt-3 mb-6 text-15 text-center sm:text-20 sm:mt-4 sm:mb-7 lg:text-25 lg:mt-5 lg:mb-8 2xl:text-35 2xl:mt-7 2xl:mb-10'>
+      <p className='mb-6 mt-3 text-center text-15 sm:mb-7 sm:mt-4 sm:text-20 lg:mb-8 lg:mt-5 lg:text-25 2xl:mb-10 2xl:mt-7 2xl:text-35'>
         Quanto antes você fizer parte dessa jornada,{' '}
         <span className='bg-blueBox text-white'>mais barato será!</span>
       </p>
@@ -44,33 +44,35 @@ const Prices = () => {
           680: {
             slidesPerView: 3,
             spaceBetween: 10,
-            centeredSlides: false
+            centeredSlides: false,
           },
         }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`min-w-[220px] pt-7 rounded-lg overflow-hidden md:max-w-[297px] ${slide.isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}
+              className={`min-w-[220px] overflow-hidden rounded-lg pt-7 md:max-w-[297px] ${slide.isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}
             >
               <p
-                className={`mb-2.5 px-4 text-15 text-center lg:text-20 ${slide.isAvailable ? 'text-phase' : 'text-notAvailable'}`}
+                className={`mb-2.5 px-4 text-center text-15 lg:text-20 ${slide.isAvailable ? 'text-phase' : 'text-notAvailable'}`}
               >
                 {slide.phase}
               </p>
-              <p className='max-w-[90%] px-4 text-11 lg:text-15'>{slide.title}</p>
-              <div className='mt-3 px-4 flex flex-col gap-1.5 text-11 lg:text-15 lg:mt-4 text-bullets'>
+              <p className='max-w-[90%] px-4 text-11 lg:text-15'>
+                {slide.title}
+              </p>
+              <div className='mt-3 flex flex-col gap-1.5 px-4 text-11 text-bullets lg:mt-4 lg:text-15'>
                 {slide.points.map((point, index) => (
                   <p
                     key={index}
-                    className={`pl-4 py-1 rounded-md shadow-slideBP lg:pl-6  ${slide.isAvailable ? '' : 'text-notAvailable'}`}
+                    className={`rounded-md py-1 pl-4 shadow-slideBP lg:pl-6  ${slide.isAvailable ? '' : 'text-notAvailable'}`}
                   >
                     {point}
                   </p>
                 ))}
               </div>
               <p
-                className={`mt-14 py-4 text-10 text-center text-white lg:mt-16 ${slide.isAvailable ? 'bg-available' : 'bg-notAvailableFooter'}`}
+                className={`mt-14 py-4 text-center text-10 text-white lg:mt-16 ${slide.isAvailable ? 'bg-available' : 'bg-notAvailableFooter'}`}
               >
                 {slide.isAvailable ? 'DISPONÍVEL' : 'INDISPONÍVEL'}
               </p>
@@ -79,7 +81,7 @@ const Prices = () => {
         ))}
         <LineCircle />
       </Swiper>
-      <div className='flex flex-col gap-3 mt-4 items-center'>
+      <div className='mt-4 flex flex-col items-center gap-3'>
         <p className='text-center text-12 sm:text-14 lg:text-17 2xl:text-20'>
           Compre o acesso anual a todas as fases por apenas R$000,00.
         </p>
@@ -90,15 +92,15 @@ const Prices = () => {
           Entre em contato para compras para times ou empresas.
         </p>
       </div>
-      <div className='flex flex-col items-center text-center mt-8 gap-3'>
+      <div className='mt-8 flex flex-col items-center gap-3 text-center'>
         <a
-          className='text-white bg-buyNowBtn w-60 py-3 rounded-3xl shadow-buyBtn sm:text-14 sm:w-64 lg:w-72 lg:text-20 2xl:text-25 2xl:w-[340px]'
+          className='w-60 rounded-3xl bg-buyNowBtn py-3 text-white shadow-buyBtn sm:w-64 sm:text-14 lg:w-72 lg:text-20 2xl:w-[340px] 2xl:text-25'
           href=''
         >
           COMPRAR AGORA
         </a>
         <a
-          className='text-12 py-4 rounded-3xl w-60 shadow-buyBtn sm:w-64 lg:text-14 lg:w-72 2xl:text-15 2xl:w-[340px]'
+          className='w-60 rounded-3xl py-4 text-12 shadow-buyBtn sm:w-64 lg:w-72 lg:text-14 2xl:w-[340px] 2xl:text-15'
           href=''
         >
           Ficou com dúvida? Fale com a gente

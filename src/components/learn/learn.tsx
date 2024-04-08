@@ -38,28 +38,28 @@ const learnTexts = [
 
 const Learn = () => {
   return (
-    <section className='relative mt-5  2xl:mt-10 flex flex-col items-center bg-grayBox'>
-      <div className='bg-darkBox text-center text-15 sm:text-20 lg:text-25 2xl:text-40 py-2 px-4 sm:py-3 sm:px-5 lg:py-4 lg:px-8 border border-solid border-grayBorder border-1 -top-11 sm:-top-12 lg:-top-14 2xl:-top-16  text-white z-[2] flex flex-col items-center justify-center absolute'>
+    <section className='relative mt-5  flex flex-col items-center bg-grayBox 2xl:mt-10'>
+      <div className='border-1 absolute -top-11 z-[2] flex flex-col items-center justify-center border border-solid border-grayBorder bg-darkBox px-4 py-2 text-center text-15 text-white sm:-top-12 sm:px-5 sm:py-3  sm:text-20 lg:-top-14 lg:px-8 lg:py-4 lg:text-25 2xl:-top-16 2xl:text-40'>
         <p>O QUE VOCÊ VAI APRENDER</p>
       </div>
-      <div className='swiper-learn max-w-[1400px] w-full section-container shadow-md'>
+      <div className='swiper-learn section-container w-full max-w-[1400px] shadow-md'>
         <Swiper
-          className='pb-12 pl-5 pt-5 sm:pt-7 lg:px-8 lg:pt-12 lg:pb-20 2xl:pt-20 2xl:pb-28'
+          className='pb-12 pl-5 pt-5 sm:pt-7 lg:px-8 lg:pb-20 lg:pt-12 2xl:pb-28 2xl:pt-20'
           navigation={true}
           modules={[Navigation]}
           slidesPerView={'auto'}
           spaceBetween={30}
           breakpoints={{
             862: {
-              slidesPerView: 6
-            }
+              slidesPerView: 6,
+            },
           }}
         >
           {learnTexts.map((item, index) => (
             <SwiperSlide>
               <div
                 key={index}
-                className='flex flex-col items-center text-center gap-2 min-w-28 min-h-32'
+                className='flex min-h-32 min-w-28 flex-col items-center gap-2 text-center'
               >
                 <img
                   className='w-12 sm:w-12 lg:w-16 2xl:w-24'

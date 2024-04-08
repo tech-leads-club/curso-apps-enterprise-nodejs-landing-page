@@ -4,28 +4,28 @@ import ThoughtworksLogo from '../../assets/thoughtworks_logo.jpg'
 
 const Companies = () => {
   return (
-    <section className='flex flex-col items-center mt-7 mb-9 px-5'>
+    <section className='mb-9 mt-7 flex flex-col items-center px-5'>
       <p className='text-12 text-subtitle sm:text-20 lg:text-25 2xl:text-35'>
         ALGUMAS EMPRESAS QUE TRABALHARAM
       </p>
-      <div className='mt-5 w-full flex justify-center gap-6 items-center sm:gap-10 lg:gap-14 2xl:gap-16'>
+      <div className='mt-5 flex w-full items-center justify-center gap-6 sm:gap-10 lg:gap-14 2xl:gap-16'>
         <img
-          className='w-24 h-3 sm:w-40 sm:h-5 lg:w-60 lg:h-7 2xl:w-90 2xl:h-11 '
+          className='h-3 w-24 sm:h-5 sm:w-40 lg:h-7 lg:w-60 2xl:h-11 2xl:w-90 '
           src={AtlassianLogo}
           alt='Logotipo da Atlassian'
         />
         <img
-          className='w-24 h-3 sm:w-44 sm:h-5 lg:w-60 lg:h-7 2xl:w-90 2xl:h-11'
+          className='h-3 w-24 sm:h-5 sm:w-44 lg:h-7 lg:w-60 2xl:h-11 2xl:w-90'
           src={MeltwaterLogo}
           alt='Logotipo da Meltwater'
         />
         <img
-          className='w-24 h-3 sm:w-44 sm:h-5 lg:w-60 lg:h-7 2xl:w-90 2xl:h-11'
+          className='h-3 w-24 sm:h-5 sm:w-44 lg:h-7 lg:w-60 2xl:h-11 2xl:w-90'
           src={ThoughtworksLogo}
           alt='Logotipo da thoughtworks'
         />
       </div>
-      <div className='mt-8 text-center text-15 text-community sm:text-20 sm:mt-12 lg:mt-16 lg:text-25 2xl:mt-24 2xl:text-35'>
+      <div className='mt-8 text-center text-15 text-community sm:mt-12 sm:text-20 lg:mt-16 lg:text-25 2xl:mt-24 2xl:text-35'>
         <p className='max-w-[300px] sm:max-w-[540px] lg:max-w-[670px] 2xl:max-w-[930px]'>
           E <span className='bg-blueBox text-white'>UMA COMUNIDADE</span>{' '}
           INTEIRA COM PESSOAS QUE TEM A MISSÃO{' '}

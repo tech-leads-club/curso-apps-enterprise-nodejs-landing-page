@@ -28,17 +28,17 @@ const teachersData = [
 
 const Teachers = () => {
   return (
-    <section className='px-5 pt-20 pb-10 bg-darkBlueBox relative flex flex-col items-center lg:pt-24 2xl:pt-36'>
-      <div className='bg-darkBox text-white text-15 absolute -top-5 px-9 py-2 m-auto border border-solid border-grayBorder border-1 sm:text-20 sm:-top-6 lg:text-25 2xl:text-40 2xl:-top-9'>
+    <section className='relative flex flex-col items-center bg-darkBlueBox px-5 pb-10 pt-20 lg:pt-24 2xl:pt-36'>
+      <div className='border-1 absolute -top-5 m-auto border border-solid border-grayBorder bg-darkBox px-9 py-2 text-15 text-white sm:-top-6 sm:text-20 lg:text-25 2xl:-top-9 2xl:text-40'>
         <p className='text-center'>COM QUEM VOCÊ VAI APRENDER</p>
       </div>
       <div className='flex flex-col gap-14 md:flex-row'>
         {teachersData.map((teacher) => (
           <div
             key={teacher.name}
-            className='flex flex-col flex-1 items-center min-w-72 max-w-788 text-center bg-white rounded-2xl relative '
+            className='relative flex min-w-72 max-w-788 flex-1 flex-col items-center rounded-2xl bg-white text-center '
           >
-            <div className='bg-white rounded-full absolute m-auto w-28 -top-8 lg:w-40 lg:-top-12 2xl:w-60 2xl:-top-20'>
+            <div className='absolute -top-8 m-auto w-28 rounded-full bg-white lg:-top-12 lg:w-40 2xl:-top-20 2xl:w-60'>
               <div className='flex flex-col items-center justify-center p-1.5'>
                 <img
                   className='rounded-full'
@@ -48,22 +48,22 @@ const Teachers = () => {
               </div>
             </div>
             <div className='mt-20 px-8 lg:mt-28 lg:px-12 2xl:mt-36 2xl:px-20'>
-              <p className='text-17 my-1 lg:text-25 2xl:text-40'>
+              <p className='my-1 text-17 lg:text-25 2xl:text-40'>
                 {teacher.name}
               </p>
-              <p className='text-12 font-normal mb-2.5 lg:text-14 lg:mb-4 2xl:text-15 2xl:mb-6'>
+              <p className='mb-2.5 text-12 font-normal lg:mb-4 lg:text-14 2xl:mb-6 2xl:text-15'>
                 {teacher.subtitle}
               </p>
-              <p className='text-15 text-description mb-12'>
+              <p className='mb-12 text-15 text-description'>
                 {teacher.description}
               </p>
             </div>
-            <div className='bg-darkBlueBox w-3.5 h-3.5 rounded-full absolute bottom-1.5 right-1.5 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8'></div>
+            <div className='absolute bottom-1.5 right-1.5 h-3.5 w-3.5 rounded-full bg-darkBlueBox lg:h-6 lg:w-6 2xl:h-8 2xl:w-8'></div>
           </div>
         ))}
       </div>
       <div className='flex flex-col items-center text-center'>
-        <p className='text-white text-15 mt-8 mb-3.5'>TEXTO SOBRE AS IMAGENS</p>
+        <p className='mb-3.5 mt-8 text-15 text-white'>TEXTO SOBRE AS IMAGENS</p>
       </div>
       <Swiper
         className='max-w-[1632px]'
@@ -78,23 +78,23 @@ const Teachers = () => {
       >
         <SwiperSlide>
           <img
-            className='w-full h-full rounded-3xl'
+            className='h-full w-full rounded-3xl'
             src={WillianWaldemarPhoto}
-            alt=''
+            alt='Conversa entre Willian e Waldemar'
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className='w-full h-full rounded-3xl'
+            className='h-full w-full rounded-3xl'
             src={DevLabCastPhoto}
-            alt=''
+            alt='Converrsa no Devlabcast'
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className='w-full h-full rounded-3xl'
+            className='h-full w-full rounded-3xl'
             src={YoutubePhoto}
-            alt=''
+            alt='Foto do Youtube'
           />
         </SwiperSlide>
       </Swiper>
