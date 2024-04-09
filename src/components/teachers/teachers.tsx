@@ -70,7 +70,7 @@ const Teachers = () => {
         slidesPerView={1.15}
         spaceBetween={30}
         breakpoints={{
-          768: {
+          600: {
             slidesPerView: 3,
             spaceBetween: 10,
           },

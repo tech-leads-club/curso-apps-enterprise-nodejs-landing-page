@@ -34,6 +34,7 @@ export default {
         0.5: '0.125rem',
       },
       fontSize: {
+        8: ['8px', '11px'],
         10: ['11px', '14px'],
         11: ['11px', '15px'],
         12: ['12px', '16px'],
