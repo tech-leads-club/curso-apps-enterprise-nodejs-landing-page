@@ -1,13 +1,14 @@
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import './carousel.css'
+import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import DevLabCastPhoto from '../../assets/devlabcast.jpg'
 import WaldemarPhoto from '../../assets/waldemar.jpg'
 import WillianPhoto from '../../assets/willian.jpg'
 import WillianWaldemarPhoto from '../../assets/willian_waldemar.jpg'
 import YoutubePhoto from '../../assets/youtube.jpg'
+import './carousel.css'
 
 const teachersData = [
   {
@@ -28,7 +29,7 @@ const teachersData = [
 
 const Teachers = () => {
   return (
-    <section className='relative flex flex-col items-center bg-darkBlueBox px-5 pb-10 pt-20 lg:pt-24 2xl:pt-36'>
+    <section className='teachers relative flex flex-col items-center bg-darkBlueBox px-5 sm:pb-10 pt-20 lg:pt-24 2xl:pt-36'>
       <div className='border-1 absolute -top-5 m-auto border border-solid border-grayBorder bg-darkBox px-9 py-2 text-15 text-white sm:-top-6 sm:text-20 lg:text-25 2xl:-top-9 2xl:text-40'>
         <p className='text-center'>COM QUEM VOCÊ VAI APRENDER</p>
       </div>
@@ -66,8 +67,10 @@ const Teachers = () => {
         <p className='mb-3.5 mt-8 text-15 text-white'>TEXTO SOBRE AS IMAGENS</p>
       </div>
       <Swiper
-        className='max-w-[1632px]'
+        className='max-w-[1632px] pb-14 sm:pb-0'
         slidesPerView={1.15}
+        navigation={true}
+        modules={[Navigation]}
         spaceBetween={30}
         breakpoints={{
           600: {

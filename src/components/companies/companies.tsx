@@ -26,7 +26,7 @@ const Companies = () => {
         />
       </div>
       <div className='mt-8 text-center text-15 text-community sm:mt-12 sm:text-20 lg:mt-16 lg:text-25 2xl:mt-24 2xl:text-35'>
-        <p className='max-w-[300px] sm:max-w-[540px] lg:max-w-[670px] 2xl:max-w-[930px]'>
+        <p className='max-w-[500px] sm:max-w-[540px] lg:max-w-[670px] 2xl:max-w-[930px]'>
           E <span className='bg-blueBox text-white'>UMA COMUNIDADE</span>{' '}
           INTEIRA COM PESSOAS QUE TEM A MISSÃO{' '}
           <span className='bg-blueBox text-white'>

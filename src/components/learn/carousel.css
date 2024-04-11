@@ -12,7 +12,7 @@
 }
 
 .swiper-button-next {
-  background-image: url('../../assets/next-btn.png');
+  background-image: url('./../../assets/next-btn.png');
 }
 
 .swiper-button-prev {

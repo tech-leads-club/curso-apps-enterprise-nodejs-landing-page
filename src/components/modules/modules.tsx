@@ -33,11 +33,11 @@ const dataModules = [
 
 const Modules = () => {
   return (
-    <div className='flex flex-col items-center gap-6 bg-grayBox py-9 lg:flex-row lg:justify-center lg:py-20 2xl:py-28'>
+    <div className='flex flex-col items-center sm:flex-row px-5 sm:px-6 sm:justify-center gap-6 bg-grayBox py-9 lg:flex-row lg:justify-center lg:py-20 2xl:py-28'>
       {dataModules.map((module) => (
         <div
           key={module.name}
-          className='flex w-64 flex-col gap-5 lg:w-80 lg:gap-6 2xl:w-100 2xl:gap-8'
+          className='flex w-72 flex-col gap-5 lg:w-80 lg:gap-6 2xl:w-100 2xl:gap-8'
         >
           <div className='rounded-2xl bg-module text-center text-11 text-moduleTitle shadow-base sm:text-12 lg:text-15 2xl:text-20'>
             <div className='flex h-24 items-center justify-center lg:h-28 2xl:h-36'>

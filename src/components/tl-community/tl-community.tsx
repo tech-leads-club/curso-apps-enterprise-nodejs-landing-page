@@ -5,7 +5,7 @@ const TechLeadsCommunity = () => {
   return (
     <section className='h-tlCommunityBase px-5 sm:px-6 lg:px-10 lg:pt-10 2xl:h-tlCommunityXXL 2xl:px-14'>
       <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-center'>
-        <p className='mb-10 mt-5 w-75 text-center text-15 sm:w-500 sm:text-20 lg:mt-16 2xl:mt-28 2xl:w-800 2xl:text-30'>
+        <p className='mb-10 mt-5 max-w-[550px] text-center text-15 sm:max-w-[800px] sm:text-20 lg:mt-16 lg:max-w-[550px] 2xl:mt-28 2xl:max-w-[800px] 2xl:text-30'>
           Tudo isso dentro de{' '}
           <span className='bg-blueBox text-white'>uma comunidade</span> com
           pessoas que querem{' '}

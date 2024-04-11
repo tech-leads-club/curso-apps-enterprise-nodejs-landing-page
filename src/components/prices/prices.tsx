@@ -4,27 +4,25 @@ import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import LineCircle from '../icons/LineCircle'
 import './carousel.css'
+import { Navigation } from 'swiper/modules'
 
 const slides = [
   {
     phase: 'FASE 1',
     title: 'FUNDAMENTOS DA CULTURA DE SOFTWARE',
-    points: ['Início', 'BulletPoint 2', 'BulletPoint 3', 'BulletPoint 4'],
-    isAvailable: true,
+    points: ['Início', 'BulletPoint 2', 'BulletPoint 3',  'BulletPoint 4'],
     date: '01/01/24',
   },
   {
     phase: 'FASE 2',
     title: 'ARQUITETURA MODULAR EM ESCALA',
-    points: ['Início', 'BulletPoint 2', 'BulletPoint 3', 'BulletPoint 4'],
-    isAvailable: false,
+    points: ['Início', 'BulletPoint 2', 'BulletPoint 3',  'BulletPoint 4'],
     date: '08/05/24',
   },
   {
     phase: 'FASE 3',
     title: 'MANTENDO SOFTWARE EM PRODUÇÃO',
     points: ['Início', 'BulletPoint 2', 'BulletPoint 3', 'BulletPoint 4'],
-    isAvailable: false,
     date: '23/06/24',
   },
 ]
@@ -42,6 +40,8 @@ const Prices = () => {
       <Swiper
         className='max-w-[921px]'
         spaceBetween={15}
+        navigation={true}
+        modules={[Navigation]}
         centeredSlides={true}
         slidesPerView={1.3}
         breakpoints={{
@@ -65,7 +65,7 @@ const Prices = () => {
           return (
             <SwiperSlide key={index}>
               <div
-                className={`flex h-[308px] w-[220px] flex-col justify-between overflow-hidden rounded-lg pt-7 md:max-w-[297px] lg:h-[390px] lg:w-[297px] 2xl:h-[416px] ${isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}
+                className={`flex min-h-[308px] w-[220px] flex-col justify-between overflow-hidden rounded-lg pt-7 md:max-w-[297px] lg:min-h-[390px] lg:w-[297px] 2xl:min-h-[416px] ${isAvailable ? 'shadow-priceSlide' : 'bg-notAvailableBody'}`}
               >
                 <div>
                   <p
@@ -88,7 +88,7 @@ const Prices = () => {
                   </div>
                 </div>
                 {!isAvailable && (
-                  <div className='text-8 self-center rounded-md px-2 py-1.5 text-date shadow-slideBP lg:px-3 lg:py-2.5 lg:text-11 2xl:text-12'>
+                  <div className='my-2 self-center rounded-md px-2 py-1.5 text-8 text-date shadow-slideBP lg:my-6 lg:px-3 lg:py-2.5 lg:text-11 2xl:text-12'>
                     DISPONÍVEL EM {slide.date}
                   </div>
                 )}

@@ -36,7 +36,7 @@ const CommunityMembers = () => {
         {members.map((member, index) => (
           <div
             key={index}
-            className='flex w-80 flex-col items-start gap-4 2xl:w-100'
+            className='flex w-80 flex-col px-5 items-start gap-4 2xl:w-100'
           >
             <div className='flex items-center gap-2'>
               <img className='sm: w-16 2xl:w-24' src={member.photo} alt='Foto três por quatro do membro da comunidade' />
