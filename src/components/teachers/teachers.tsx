@@ -29,7 +29,7 @@ const teachersData = [
 
 const Teachers = () => {
   return (
-    <section className='teachers relative flex flex-col items-center bg-darkBlueBox px-5 sm:pb-10 pt-20 lg:pt-24 2xl:pt-36'>
+    <section className='teachers relative flex flex-col items-center bg-darkBlueBox px-5 pt-20 sm:pb-10 lg:pt-24 2xl:pt-36'>
       <div className='border-1 absolute -top-5 m-auto border border-solid border-grayBorder bg-darkBox px-9 py-2 text-15 text-white sm:-top-6 sm:text-20 lg:text-25 2xl:-top-9 2xl:text-40'>
         <p className='text-center'>COM QUEM VOCÊ VAI APRENDER</p>
       </div>
@@ -64,7 +64,7 @@ const Teachers = () => {
         ))}
       </div>
       <div className='flex flex-col items-center text-center'>
-        <p className='mb-3.5 mt-8 text-15 text-white'>TEXTO SOBRE AS IMAGENS</p>
+        <p className='mb-3.5 mt-8 text-15 text-white'></p>
       </div>
       <Swiper
         className='max-w-[1632px] pb-14 sm:pb-0'

@@ -8,12 +8,44 @@ import Prices from '../components/prices/prices'
 import Teachers from '../components/teachers/teachers'
 import TechLeadsCommunity from '../components/tl-community/tl-community'
 
+const dataModules = [
+  {
+    name: 'FUNDAMENTOS DE CONSTRUÇÃO DE SOFTWARE ENTERPRISE',
+    topics: [
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+    ],
+  },
+  {
+    name: 'ARQUITETURA MODULAR EM ESCALA',
+    topics: [
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+    ],
+  },
+  {
+    name: 'MANTENDO SOFTWARE EM PRODUÇÃO',
+    topics: [
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+      'Bla bla bla bla',
+    ],
+  },
+]
 function InformationPage() {
   return (
     <main className='min-h-screen font-segoe font-bold'>
       <Header />
       <Learn />
-      <Modules />
+      <Modules modules={dataModules} />
       <TechLeadsCommunity />
       <Teachers />
       <Companies />
