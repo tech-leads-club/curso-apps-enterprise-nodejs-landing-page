@@ -1,5 +1,5 @@
 import Companies from '../components/companies/companies'
-import FirstPage from '../components/header-sign-in/firstPage'
+import FirstPage from '../components/firstPage/firstPage'
 import Learn from '../components/learn/learn'
 import Modules from '../components/modules/modules'
 import Teachers from '../components/teachers/teachers'
