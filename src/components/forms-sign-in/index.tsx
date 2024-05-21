@@ -21,7 +21,7 @@ export default function LeftFirstPage() {
   }
 
   return (
-    <div >
+    <div>
       <div className='flex h-[25rem] w-full items-center justify-center  pr-5   sm:h-96  md:w-full  lg:h-[480px] lg:w-[50vw] 2xl:h-[700px] 2xl:w-[49vw] '>
         <div className='flex flex-col items-center justify-center lg:ml-10 xl:ml-20 2xl:ml-10'>
           <div className=' lg:text-18 mb-4 w-[60%] text-left  font-segoe font-light sm:mb-8 xl:mb-10 2xl:mb-16 2xl:w-[55%] 2xl:text-30'>
@@ -71,8 +71,8 @@ export default function LeftFirstPage() {
               </button>
             </div>
             <div className='flex'>
-              <div className='absolute bottom-[-1.2rem] right-[-2rem]  mb-2 mr-5 h-8 w-8 rounded-lg bg-blue-500 sm:h-[2.3rem] sm:w-[2.3rem]  '></div>
-              <div className='absolute bottom-1 right-[-2.3rem] mb-6 h-6 w-6 rounded-md bg-blue-500  '></div>
+              <div className='absolute bottom-[-1.2rem] right-[-2rem] mb-2  mr-5 h-8 w-8 rounded-lg bg-blue-500 sm:h-[2.3rem] sm:w-[2.3rem] 2xl:bottom-[-1.5rem] 2xl:right-[-2.3rem] 2xl:mr-6 2xl:h-[3rem] 2xl:w-[3rem] '></div>
+              <div className='absolute bottom-1 right-[-2.3rem] mb-6 h-6 w-6 rounded-md bg-blue-500 2xl:right-[-3.5rem] 2xl:h-8 2xl:w-8'></div>
             </div>
           </form>
         </div>
