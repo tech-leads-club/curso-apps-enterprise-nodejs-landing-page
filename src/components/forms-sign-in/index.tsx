@@ -22,15 +22,15 @@ export default function LeftFirstPage() {
 
   return (
     <div>
-      <div className='flex h-[25rem] w-full items-center justify-center  pr-5   sm:h-96  md:w-full  lg:h-[480px] lg:w-[50vw] 2xl:h-[700px] 2xl:w-[49vw] '>
-        <div className='flex flex-col items-center justify-center lg:ml-10 xl:ml-20 2xl:ml-10'>
+      <div className='flex h-[25rem] w-full items-center justify-center  bg-red-900     sm:h-96 md:w-full  lg:h-[480px] lg:w-[50vw] 2xl:h-[700px] 2xl:w-[49vw] 2xl:max-w-[1020px] '>
+        <div className='flex max-w-[460px] flex-col items-center justify-center  bg-blue-800 sm:min-w-[550px] sm:max-w-[530px] md:max-w-[530px] lg:w-[500px] lg:max-w-[500px]  xl:w-[600px]  xl:max-w-[600px] 2xl:ml-10 2xl:min-w-[840px] 2xl:max-w-[840px]'>
           <div className=' lg:text-18 mb-4 w-[60%] text-left  font-segoe font-light sm:mb-8 xl:mb-10 2xl:mb-16 2xl:w-[55%] 2xl:text-30'>
             Lorem ipsum dolor sit amet. Ea galisum harum vel distinctio
             voluptatibus non temporibus
           </div>
           <form
             onSubmit={handleSubmit}
-            className='relative h-80 w-[70%] rounded-2xl bg-colorForms shadow-lg sm:w-[60%] md:h-80   lg:h-[24rem] lg:w-[70%] xl:h-[22rem] xl:w-[60%] 2xl:h-[32rem] 2xl:w-[55%] '
+            className='relative h-80 w-[70%] rounded-2xl bg-colorForms shadow-lg sm:w-[60%] md:h-80   lg:h-[24rem] lg:w-[70%]  xl:w-[65%] 2xl:h-[32rem] 2xl:w-[55%] '
           >
             <div className=' mb-8 flex-col pt-8 text-center text-12 lg:mb-12 lg:text-12  xl:mb-10 xl:text-15 2xl:mb-20 2xl:pt-12 2xl:text-15'>
               <p className='text-12  md:text-14 lg:text-15 '>
@@ -41,7 +41,7 @@ export default function LeftFirstPage() {
             <div className='mt-3 flex justify-center'>
               <input
                 name='name'
-                className='w-[85%]  rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-3 md:leading-5 lg:leading-7 2xl:leading-10'
+                className='w-[85%]  rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset   md:leading-5 lg:leading-7 2xl:leading-10'
                 placeholder='Nome'
                 onChange={handleChangeValue}
               />
@@ -49,7 +49,7 @@ export default function LeftFirstPage() {
             <div className='mt-3 flex justify-center xl:mt-3 2xl:mt-6'>
               <input
                 name='email'
-                className='w-[85%] rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-3 md:leading-5 lg:leading-7 2xl:leading-10'
+                className='w-[85%] rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset   md:leading-5 lg:leading-7 2xl:leading-10'
                 placeholder='E-mail'
                 onChange={handleChangeValue}
               />
@@ -57,15 +57,15 @@ export default function LeftFirstPage() {
             <div className='mt-3 flex justify-center xl:mt-3 2xl:mt-6'>
               <input
                 name='phone'
-                className='w-[85%] rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-3 md:leading-5 lg:leading-7 2xl:leading-10'
+                className='w-[85%] rounded-md border-0 bg-grayBox p-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset   md:leading-5 lg:leading-7 2xl:leading-10'
                 placeholder='WhatsApp'
                 onChange={handleChangeValue}
               />
             </div>
-            <div className='mt-6 flex justify-center lg:mt-8 xl:mt-6 2xl:mt-8 '>
+            <div className='mt-6 flex justify-center lg:mt-8'>
               <button
                 type='submit'
-                className='flex w-[85%] justify-center rounded-md bg-blueButtonLight  px-3 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blueButtonMiddle sm:leading-5  md:leading-6 lg:leading-7  2xl:leading-10'
+                className='flex w-[85%] justify-center rounded-md bg-blueButtonLight  px-3 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blueButtonMiddle   md:leading-6 lg:leading-7  2xl:leading-10'
               >
                 GARANTIR MINHA VAGA
               </button>
