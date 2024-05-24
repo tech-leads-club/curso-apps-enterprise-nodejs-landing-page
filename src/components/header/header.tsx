@@ -5,10 +5,11 @@ import YoutubeVideo from './youtube-embed'
 function Header() {
   return (
     <section className='bg-circle-pattern'>
-      <div className='pl-5 pt-5 sm:pl-6 lg:pl-10 2xl:pl-14'>
-        <TlcLogo />
+      <div className='flex flex-col items-center'>
+        <div className='w-full max-w-[1780px]  pl-5 pt-5 sm:pl-6 lg:pl-10 2xl:pl-14'>
+          <TlcLogo />
+        </div>
       </div>
-
       <div className='flex flex-col items-center px-5 text-center sm:px-6 lg:px-10 2xl:px-14'>
         <div className='max-w-[500px] md:max-w-700 lg:max-w-1000 2xl:max-w-1400'>
           <p className='mt-10 text-center text-15 sm:text-20 lg:text-25 2xl:text-35'>
@@ -27,7 +28,7 @@ function Header() {
         </p>
       </div>
 
-      <div className='sm:px-6 lg:px-10 2xl:px-14'>
+      <div className=' sm:px-6 lg:px-10 2xl:px-14'>
         <YoutubeVideo embedId='FIG3xjgnicg?si=w9HkgomD07M4olZS' />
       </div>
 
