@@ -4,8 +4,8 @@ import YoutubeVideo from './youtube-embed'
 
 function FirstPage() {
   return (
-    <section className='bg-circle-pattern'>
-      <div className='pl-5 pt-5 sm:pl-6 lg:pl-10 2xl:pl-14'>
+    <section className='flex flex-col items-center justify-center bg-circle-pattern '>
+      <div className='w-full max-w-[1780px]  pl-5 pt-5 sm:pl-6 lg:pl-10 2xl:pl-14'>
         <TlcLogo />
       </div>
 
