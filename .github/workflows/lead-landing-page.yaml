@@ -19,6 +19,7 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Setup Pages
         if: github.ref == 'refs/heads/feature/page-lead'
