@@ -45,16 +45,16 @@ function FirstPage() {
         </p>
 
         <p className=' 2xl:mb-18 mb-7 max-w-[500px] text-center text-15 sm:mb-10 sm:max-w-[760px] sm:text-20 lg:mb-14 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          O que não falta é curso falando da “maneira certa”, “arquitetura
-          certa” e o “jeito certo”. Mas, a maioria deles, não trazem a bagagem e
-          a experiência de quem desenvolve software de grande escala há muito
-          tempo.
+          É claro que esses padrões são fundamentais e importantes mas isso não significa
+          que eles são a  “maneira certa”, “arquitetura certa” e o “jeito certo”.
+          Tudo depende do contexto e essas decisões técnicas demandam maturidade.
         </p>
 
         <p className=' max-w-[500px] text-center text-15 sm:max-w-[760px] sm:text-20 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          Entender profundamente sobre linguagens e padrões de arquitetura e
-          desenvolvimento é crucial, mas saber quando{' '}
-          <span className='bg-blueBox text-white'>aplicar é essencial.</span>
+          Nesse curso você vai aprender como utilizar os conceitos de Arquitetura Evolutiva 
+          e Modular para desenvolver projetos de qualquer porte tirando o melhor
+          proveito de cada padrão no {' '}
+          <span className='bg-blueBox text-white'>momento certo!</span>
         </p>
       </div>
     </section>
