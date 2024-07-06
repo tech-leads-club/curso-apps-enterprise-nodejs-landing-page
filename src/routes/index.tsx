@@ -4,15 +4,15 @@ import InformationPage from "../pages/information";
 import LeadsPage from "../pages/leads";
 
 
-const basePath = '/curso-apps-enterprise-nodejs-landing-page';
+//const basePath = '/curso-apps-enterprise-nodejs-landing-page';
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={`${basePath}/`} element={<Navigate to={`${basePath}/increva-se`} />} />
-                <Route path={`${basePath}/increva-se`} element={<LeadsPage />} />
-                <Route path={`${basePath}/informacoes`} element={<InformationPage />} />
+                <Route path={`/`} element={<Navigate to={`/increva-se`} />} />
+                <Route path={`/increva-se`} element={<LeadsPage />} />
+                <Route path={`/informacoes`} element={<InformationPage />} />
             </Routes>
         </BrowserRouter>
     );
