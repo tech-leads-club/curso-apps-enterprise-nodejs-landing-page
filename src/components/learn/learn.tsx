@@ -16,7 +16,7 @@ const learnTexts = [
   },
   {
     photo: DecisionPhoto,
-    text: 'Tomar decisões técnicas efetivas e liderar.',
+    text: 'Como tomar decisões técnicas chave para a arquitetura.',
   },
   {
     photo: VersusPhoto,

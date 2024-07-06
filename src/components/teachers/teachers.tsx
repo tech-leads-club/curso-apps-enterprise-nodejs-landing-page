@@ -13,14 +13,14 @@ import './carousel.css'
 const teachersData = [
   {
     name: 'Waldemar Neto',
-    subtitle: 'Subtitulo, cargo, empresa etc...',
+    subtitle: 'Tech Advisor | Autor | Mentor',
     description:
       'Waldemar Neto, enquanto na Atlassian, foi um dos líderes técnicos do desenvolvimento da plataforma de plugins Forge. Seu time foi o maior usuário de Lambda de toda a Ásia/Pacifico.',
     photo: WaldemarPhoto,
   },
   {
     name: 'William Calderipe',
-    subtitle: 'Subtitulo, cargo, empresa etc...',
+    subtitle: 'Staff Engineer | Tech Lead | Mentor',
     description:
       'William Calderipe, enquanto na ThoughtWorks, foi um dos líderes técnicos na fusão de Lan e Tam que originou a Latam, um projeto de anos que envolveu a refatoração de diversos sistemas de grande escala.',
     photo: WillianPhoto,
