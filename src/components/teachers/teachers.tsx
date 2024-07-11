@@ -8,6 +8,11 @@ import WaldemarPhoto from '../../assets/waldemar.jpg'
 import WillianPhoto from '../../assets/willian.jpg'
 import WillianWaldemarPhoto from '../../assets/willian_waldemar.jpg'
 import YoutubePhoto from '../../assets/youtube.jpg'
+
+import linkedin from '../../assets/icons/linkedin.svg'
+import instagram from '../../assets/icons/instagram.svg'
+import youtube from '../../assets/icons/youtube.svg'
+
 import './carousel.css'
 
 const teachersData = [
@@ -17,6 +22,9 @@ const teachersData = [
     description:
       'Waldemar Neto, enquanto na Atlassian, foi um dos líderes técnicos do desenvolvimento da plataforma de plugins Forge. Seu time foi o maior usuário de Lambda de toda a Ásia/Pacifico.',
     photo: WaldemarPhoto,
+    linkedin_url: 'https://www.linkedin.com/in/waldemarnt/',
+    instagram_url: 'https://www.instagram.com/waldemarnt/',
+    youtube_url: 'https://www.youtube.com/channel/UCz2ZD0fX4k4Fp5aZk4z2K6A',
   },
   {
     name: 'William Calderipe',
@@ -24,6 +32,9 @@ const teachersData = [
     description:
       'William Calderipe, enquanto na ThoughtWorks, foi um dos líderes técnicos na fusão de Lan e Tam que originou a Latam, um projeto de anos que envolveu a refatoração de diversos sistemas de grande escala.',
     photo: WillianPhoto,
+    linkedin_url: 'https://www.linkedin.com/in/wcalderipe/',
+    instagram_url: 'https://www.instagram.com/waldemar.devlab/',
+    youtube_url: 'https://www.youtube.com/channel/UCz2ZD0fX4k4Fp5aZk4z2K6A',
   },
 ]
 
@@ -52,9 +63,20 @@ const Teachers = () => {
               <p className='my-1 text-17 lg:text-25 2xl:text-40'>
                 {teacher.name}
               </p>
-              <p className='mb-2.5 text-12 font-normal lg:mb-4 lg:text-14 2xl:mb-6 2xl:text-15'>
+              <p className='mb-1 text-12 font-normal lg:mb-2 lg:text-14 2xl:mb-1 2xl:text-15'>
                 {teacher.subtitle}
               </p>
+              <div className='flex  items-center justify-center'>
+                <a href={teacher.linkedin_url} target='_blank'>
+                  <img className='h-12 w-12' src={`${linkedin}`}></img>
+                </a>
+                <a href={teacher.instagram_url} target='_blank'>
+                  <img className='h-12 w-12' src={`${instagram}`}></img>
+                </a>
+                <a href={teacher.youtube_url} target='_blank'>
+                  <img className='h-12 w-12' src={`${youtube}`}></img>
+                </a>
+              </div>
               <p className='mb-12 text-15 text-description'>
                 {teacher.description}
               </p>
