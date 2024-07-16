@@ -45,9 +45,9 @@ const Teachers = () => {
         <p className='text-center'>COM QUEM VOCÊ VAI APRENDER</p>
       </div>
       <div className='flex flex-col gap-14 md:flex-row'>
-        {teachersData.map((teacher) => (
+        {teachersData.map((teacher,index) => (
           <div
-            key={teacher.name}
+            key={teacher.name + index}
             className='relative flex min-w-72 max-w-788 flex-1 flex-col items-center rounded-2xl bg-white text-center '
           >
             <div className='absolute -top-8 m-auto w-28 rounded-full bg-white lg:-top-12 lg:w-40 2xl:-top-20 2xl:w-60'>
