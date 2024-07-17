@@ -12,6 +12,7 @@ import YoutubePhoto from '../../assets/youtube.jpg'
 import linkedin from '../../assets/icons/linkedin.svg'
 import instagram from '../../assets/icons/instagram.svg'
 import youtube from '../../assets/icons/youtube.svg'
+import github from '../../assets/icons/github.svg'
 
 import './carousel.css'
 
@@ -25,6 +26,7 @@ const teachersData = [
     linkedin_url: 'https://www.linkedin.com/in/waldemarnt/',
     instagram_url: 'https://www.instagram.com/waldemar.devlab/',
     youtube_url: 'https://www.youtube.com/@WaldemarNetoDevLab',
+    github_url: '',
   },
   {
     name: 'William Calderipe',
@@ -33,6 +35,7 @@ const teachersData = [
       'William Calderipe, enquanto na ThoughtWorks, foi um dos líderes técnicos na fusão de Lan e Tam que originou a Latam, um projeto de anos que envolveu a refatoração de diversos sistemas de grande escala.',
     photo: WillianPhoto,
     linkedin_url: 'https://www.linkedin.com/in/wcalderipe/',
+    github_url: '',
   },
 ]
 
@@ -78,6 +81,13 @@ const Teachers = () => {
                 {teacher.youtube_url && (
                   <a href={teacher.youtube_url} target='_blank'>
                     <img className='h-12 w-12' src={`${youtube}`}></img>
+                  </a>
+                )}
+                {teacher.github_url && (
+                  <a href={teacher.github_url} target='_blank'>
+                    <div className='flex h-12 w-12'>
+                      <img className='m-auto h-8 w-8' src={`${github}`}></img>
+                    </div>
                   </a>
                 )}
               </div>
