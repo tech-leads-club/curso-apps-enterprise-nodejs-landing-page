@@ -65,15 +65,21 @@ const Teachers = () => {
                 {teacher.subtitle}
               </p>
               <div className='flex  items-center justify-center'>
-                <a href={teacher.linkedin_url} target='_blank'>
-                  <img className='h-12 w-12' src={`${linkedin}`}></img>
-                </a>
-                <a href={teacher.instagram_url} target='_blank'>
-                  <img className='h-12 w-12' src={`${instagram}`}></img>
-                </a>
-                <a href={teacher.youtube_url} target='_blank'>
-                  <img className='h-12 w-12' src={`${youtube}`}></img>
-                </a>
+                {teacher.linkedin_url && (
+                  <a href={teacher.linkedin_url} target='_blank'>
+                    <img className='h-12 w-12' src={`${linkedin}`}></img>
+                  </a>
+                )}
+                {teacher.instagram_url && (
+                  <a href={teacher.instagram_url} target='_blank'>
+                    <img className='h-12 w-12' src={`${instagram}`}></img>
+                  </a>
+                )}
+                {teacher.youtube_url && (
+                  <a href={teacher.youtube_url} target='_blank'>
+                    <img className='h-12 w-12' src={`${youtube}`}></img>
+                  </a>
+                )}
               </div>
               <p className='mb-12 text-15 text-description'>
                 {teacher.description}
