@@ -21,10 +21,7 @@ export default function LeftFirstPage() {
       'https://hook.us1.make.com/xacot799yr3z3308gb6rp08pydyugggt',
       body
     )
-    window.location.href = 'https://chat.whatsapp.com/Kqttc35e82bG2xc33GlTdW'
-
-    console.log(data)
-    console.log(body)
+    window.location.href = 'https://chat.whatsapp.com/LDp2vKdyDc7EwLHCUcOFwk'
   }
 
   return (
