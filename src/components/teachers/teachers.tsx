@@ -23,8 +23,8 @@ const teachersData = [
       'Waldemar Neto, enquanto na Atlassian, foi um dos líderes técnicos do desenvolvimento da plataforma de plugins Forge. Seu time foi o maior usuário de Lambda de toda a Ásia/Pacifico.',
     photo: WaldemarPhoto,
     linkedin_url: 'https://www.linkedin.com/in/waldemarnt/',
-    instagram_url: 'https://www.instagram.com/waldemarnt/',
-    youtube_url: 'https://www.youtube.com/channel/UCz2ZD0fX4k4Fp5aZk4z2K6A',
+    instagram_url: 'https://www.instagram.com/waldemar.devlab/',
+    youtube_url: 'https://www.youtube.com/@WaldemarNetoDevLab',
   },
   {
     name: 'William Calderipe',
@@ -33,8 +33,6 @@ const teachersData = [
       'William Calderipe, enquanto na ThoughtWorks, foi um dos líderes técnicos na fusão de Lan e Tam que originou a Latam, um projeto de anos que envolveu a refatoração de diversos sistemas de grande escala.',
     photo: WillianPhoto,
     linkedin_url: 'https://www.linkedin.com/in/wcalderipe/',
-    instagram_url: 'https://www.instagram.com/waldemar.devlab/',
-    youtube_url: 'https://www.youtube.com/channel/UCz2ZD0fX4k4Fp5aZk4z2K6A',
   },
 ]
 
@@ -45,7 +43,7 @@ const Teachers = () => {
         <p className='text-center'>COM QUEM VOCÊ VAI APRENDER</p>
       </div>
       <div className='flex flex-col gap-14 md:flex-row'>
-        {teachersData.map((teacher,index) => (
+        {teachersData.map((teacher, index) => (
           <div
             key={teacher.name + index}
             className='relative flex min-w-72 max-w-788 flex-1 flex-col items-center rounded-2xl bg-white text-center '
