@@ -12,12 +12,12 @@ function FirstPage() {
       <div className='flex flex-col items-center px-5 text-center sm:px-6 lg:px-10 2xl:px-14'>
         <div className='max-w-[500px] md:max-w-700 lg:max-w-1000 2xl:max-w-1400'>
           <p className='mt-10 text-center text-15 sm:text-20 lg:text-25 2xl:text-35'>
-            APRENDA A CONSTRUIR SOFTWARE COM QUALIDADE EM GRANDE ESCALA.
+            WORKSHOP ARQUITETURAS EVOLUTIVAS E MODULARES NA PRÁTICA.
           </p>
         </div>
 
         <p className='mt-2.5 text-12 text-subtitle sm:text-14 lg:text-17 2xl:text-20'>
-          Desenvolver software que escala não precisa ser complexo.
+          Aprenda os fundamentos para construir software de qualquer porte de forma eficiente.
         </p>
       </div>
 
@@ -26,14 +26,14 @@ function FirstPage() {
           <LeftFirstPage />
         </div>
         <div>
-          <YoutubeVideo embedId='FIG3xjgnicg?si=w9HkgomD07M4olZS' />
+          <YoutubeVideo embedId='dHJCYiwLBFI?si=z3_I850H69iwGlSF' />
         </div>
       </div>
 
       <div className='flex flex-col items-center px-5 pb-10 sm:px-6 sm:pb-16 lg:px-10 2xl:px-14'>
         <p className=' mt-5 max-w-[500px] text-center text-15 sm:mt-10 sm:max-w-[760px] sm:text-20 lg:mt-16 lg:max-w-[1100px] lg:text-25 2xl:mt-20 2xl:max-w-[1600px] 2xl:text-35'>
           Você estuda linguagens, Frameworks, DDD, Arquitetura Hexagonal,
-          Arquitetura Limpa, Microsserviços e testes, mas{' '}
+          Arquitetura Limpa e Microsserviços, mas{' '}
           <span className='bg-blueBox text-white'>
             sente que suas soluções não estão entregando valor
           </span>{' '}
@@ -45,16 +45,16 @@ function FirstPage() {
         </p>
 
         <p className=' 2xl:mb-18 mb-7 max-w-[500px] text-center text-15 sm:mb-10 sm:max-w-[760px] sm:text-20 lg:mb-14 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          O que não falta é curso falando da “maneira certa”, “arquitetura
-          certa” e o “jeito certo”. Mas, a maioria deles, não trazem a bagagem e
-          a experiência de quem desenvolve software de grande escala há muito
-          tempo.
+          É claro que esses padrões são fundamentais mas isso não significa que existam balas de prata ou que existe a
+          “maneira certa”, “arquitetura certa” ou o  “jeito certo”.
+          Tudo depende do contexto e o mais importante é o processo evolutivo e a tomada de decisão.
         </p>
 
         <p className=' max-w-[500px] text-center text-15 sm:max-w-[760px] sm:text-20 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          Entender profundamente sobre linguagens e padrões de arquitetura e
-          desenvolvimento é crucial, mas saber quando{' '}
-          <span className='bg-blueBox text-white'>aplicar é essencial.</span>
+          Nesse workshop você vai aprender como utilizar os conceitos de Arquitetura Evolutiva 
+          e Modular para desenvolver projetos de qualquer porte, tirando o melhor
+          proveito de cada padrão no {' '}
+          <span className='bg-blueBox text-white'>momento certo</span> e se tornar um líder técnico eficiente.
         </p>
       </div>
     </section>

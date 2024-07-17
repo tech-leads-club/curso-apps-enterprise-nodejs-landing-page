@@ -6,23 +6,23 @@ import Teachers from '../components/teachers/teachers'
 
 const dataModules = [
   {
-    name: 'FUNDAMENTOS DE CONSTRUÇÃO DE SOFTWARE ENTERPRISE',
+    name: 'AULA 1: FUNDAMENTOS DA CONSTRUÇÃO DE SOFTWARE ENTERPRISE',
     topics: [
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
+      'Porque overengineering acontece',
+      'Principios da arquitetura evolutiva',
+      'Construindo o software certo',
+      'Arquitetura simples, flexivel e aberta a mudanças',
+      'Designs Patterns fundamentais',
     ],
   },
   {
-    name: 'ARQUITETURA MODULAR EM ESCALA',
+    name: 'AULA 2: ARQUITETURA MODULAR EM ESCALA',
     topics: [
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
+      'Módulos vs Microsserviços vs Monolitos',
+      'Como arquitetar um sistema modular',
+      'Comunicação entre módulos',
+      'Banco de dados e módulos',
+      'Modularização extrema',
     ],
   },
 ]

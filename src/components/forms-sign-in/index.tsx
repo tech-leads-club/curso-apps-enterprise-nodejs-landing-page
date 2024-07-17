@@ -30,8 +30,8 @@ export default function LeftFirstPage() {
       <div className=' flex h-[25rem] w-full items-center justify-center   sm:h-96     md:w-full lg:h-[480px]  lg:w-[50vw] lg:pr-20 2xl:h-[700px] 2xl:w-[49vw] 2xl:max-w-[1020px] '>
         <div className='flex max-w-[460px] flex-col items-center justify-center   sm:min-w-[550px] sm:max-w-[530px] md:max-w-[530px] lg:w-[500px] lg:max-w-[500px]  xl:w-[600px]  xl:max-w-[600px] 2xl:ml-10 2xl:min-w-[840px] 2xl:max-w-[840px]'>
           <div className=' lg:text-18 mb-4 w-[60%] text-left  font-segoe font-light sm:mb-8 xl:mb-10 2xl:mb-16 2xl:w-[55%] 2xl:text-30'>
-            Lorem ipsum dolor sit amet. Ea galisum harum vel distinctio
-            voluptatibus non temporibus
+            <p>Workshop ao vivo dias <b>13/08</b> e <b>14/08</b> as <b>19:00 horas</b></p>
+            <p>Conteudo inédito e exclusivo!</p>
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
