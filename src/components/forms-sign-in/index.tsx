@@ -1,24 +1,26 @@
 import InputMask from 'react-input-mask'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { sendRequest_form } from '../../services/sendRequest'
 
+export type IInputs = { name: string; email: string; phone: string }
 export default function LeftFirstPage() {
-  type IInputs = { name: string; email: string; phone: string }
-
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<IInputs>()
 
-  console.log(errors)
-
-  const onSubmit: SubmitHandler<IInputs> = (data) => {
+  const onSubmit: SubmitHandler<IInputs> = async (data) => {
     const { name, email, phone } = data
     const body: IInputs = {
       name,
       email,
       phone: phone.replace(/[^0-9]/g, ''),
     }
+    sendRequest_form(
+      'https://hook.us1.make.com/xacot799yr3z3308gb6rp08pydyugggt',
+      body
+    )
     console.log(data)
     console.log(body)
   }
