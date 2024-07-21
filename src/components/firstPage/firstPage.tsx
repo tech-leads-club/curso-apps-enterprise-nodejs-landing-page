@@ -17,7 +17,8 @@ function FirstPage() {
         </div>
 
         <p className='mt-2.5 text-12 text-subtitle sm:text-14 lg:text-17 2xl:text-20'>
-          Aprenda os fundamentos para construir software de qualquer porte de forma eficiente.
+          Aprenda os fundamentos para construir software de qualquer porte de
+          forma eficiente.
         </p>
       </div>
 
@@ -26,7 +27,7 @@ function FirstPage() {
           <LeftFirstPage />
         </div>
         <div>
-          <YoutubeVideo embedId='dHJCYiwLBFI?si=z3_I850H69iwGlSF' />
+          <YoutubeVideo embedId='ETo_7N0i3MI' />
         </div>
       </div>
 
@@ -45,16 +46,18 @@ function FirstPage() {
         </p>
 
         <p className=' 2xl:mb-18 mb-7 max-w-[500px] text-center text-15 sm:mb-10 sm:max-w-[760px] sm:text-20 lg:mb-14 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          É claro que esses padrões são fundamentais mas isso não significa que existam balas de prata ou que existe a
-          “maneira certa”, “arquitetura certa” ou o  “jeito certo”.
-          Tudo depende do contexto e o mais importante é o processo evolutivo e a tomada de decisão.
+          É claro que esses padrões são fundamentais mas isso não significa que
+          existam balas de prata ou que existe a “maneira certa”, “arquitetura
+          certa” ou o “jeito certo”. Tudo depende do contexto e o mais
+          importante é o processo evolutivo e a tomada de decisão.
         </p>
 
         <p className=' max-w-[500px] text-center text-15 sm:max-w-[760px] sm:text-20 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>
-          Nesse workshop você vai aprender como utilizar os conceitos de Arquitetura Evolutiva 
-          e Modular para desenvolver projetos de qualquer porte, tirando o melhor
-          proveito de cada padrão no {' '}
-          <span className='bg-blueBox text-white'>momento certo</span> e se tornar um líder técnico eficiente.
+          Nesse workshop você vai aprender como utilizar os conceitos de
+          Arquitetura Evolutiva e Modular para desenvolver projetos de qualquer
+          porte, tirando o melhor proveito de cada padrão no{' '}
+          <span className='bg-blueBox text-white'>momento certo</span> e se
+          tornar um líder técnico eficiente.
         </p>
       </div>
     </section>
