@@ -27,7 +27,7 @@ function FirstPage() {
           <LeftFirstPage />
         </div>
         <div>
-          <YoutubeVideo embedId='ETo_7N0i3MI' />
+          <YoutubeVideo embedId='2IuOyw5BfCQ' />
         </div>
       </div>
 
