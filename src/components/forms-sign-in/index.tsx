@@ -1,6 +1,7 @@
 import InputMask from 'react-input-mask'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { sendRequest_form } from '../../services/sendRequest'
+import { sha256, track } from '../../services/gtm';
 
 export type IInputs = { name: string; email: string; phone: string }
 export default function LeftFirstPage() {
@@ -17,10 +18,17 @@ export default function LeftFirstPage() {
       email,
       phone: phone.replace(/[^0-9]/g, ''),
     }
+
     await sendRequest_form(
       'https://hook.us1.make.com/xacot799yr3z3308gb6rp08pydyugggt',
       body
     )
+
+    track({
+      event: 'user_joined_wait_list',
+      email: sha256(email.trim().toLowerCase())
+    })
+
     window.location.href = 'https://chat.whatsapp.com/LDp2vKdyDc7EwLHCUcOFwk'
   }
 
