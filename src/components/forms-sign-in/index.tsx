@@ -2,6 +2,7 @@ import InputMask from 'react-input-mask'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { sendRequest_form } from '../../services/sendRequest'
 import { sha256, track } from '../../services/gtm';
+import { useState } from 'react';
 
 export type IInputs = { name: string; email: string; phone: string }
 export default function LeftFirstPage() {
@@ -10,8 +11,11 @@ export default function LeftFirstPage() {
     handleSubmit,
     formState: { errors },
   } = useForm<IInputs>()
-
+  
+  const [stateButton, setStateButton] = useState(false);
+  
   const onSubmit: SubmitHandler<IInputs> = async (data) => {
+    setStateButton(true);
     const { name, email, phone } = data
     const body: IInputs = {
       name,
@@ -123,6 +127,8 @@ export default function LeftFirstPage() {
             <div className='mt-6 flex justify-center lg:mt-8'>
               <button
                 type='submit'
+                disabled={stateButton}
+                style={{ backgroundColor: stateButton ? 'gray' : '' }}
                 className={
                   'flex w-[85%] justify-center rounded-md bg-blueButtonLight  px-3 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blueButtonMiddle   md:leading-6 lg:leading-7  2xl:leading-10'
                 }
