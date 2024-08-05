@@ -67,6 +67,7 @@ export default {
         notAvailable: '#BBBBBB',
         date: '#323232',
         communityMemberTitle: '#464646',
+        colorForms:'#FFFFFF'
       },
       backgroundColor: {
         blueBox: '#4476FF',
@@ -80,6 +81,8 @@ export default {
         notAvailableFooter: '#B0B0B0',
         available: '#43E8BB',
         buyNowBtn: '#23C287',
+        blueButtonLight: '#37A0DC',
+        blueButtonMiddle: '#0098E9',
       },
       boxShadow: {
         base: '0 3px 10px #00000008',

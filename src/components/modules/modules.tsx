@@ -1,40 +1,13 @@
-const dataModules = [
-  {
-    name: 'FUNDAMENTOS DE CONSTRUÇÃO DE SOFTWARE ENTERPRISE',
-    topics: [
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-    ],
-  },
-  {
-    name: 'ARQUITETURA MODULAR EM ESCALA',
-    topics: [
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-    ],
-  },
-  {
-    name: 'MANTENDO SOFTWARE EM PRODUÇÃO',
-    topics: [
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-      'Bla bla bla bla',
-    ],
-  },
-]
 
-const Modules = () => {
+type module= { name: string, topics: string[] }
+type props= {
+  modules: module[]
+
+}
+const Modules = ({modules}:props) => {
   return (
     <div className='flex flex-col items-center sm:flex-row px-5 sm:px-6 sm:justify-center gap-6 bg-grayBox py-9 lg:flex-row lg:justify-center lg:py-20 2xl:py-28'>
-      {dataModules.map((module) => (
+      {modules.map((module) => (
         <div
           key={module.name}
           className='flex w-72 flex-col gap-5 lg:w-80 lg:gap-6 2xl:w-100 2xl:gap-8'

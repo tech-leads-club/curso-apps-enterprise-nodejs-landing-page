@@ -16,23 +16,23 @@ const learnTexts = [
   },
   {
     photo: DecisionPhoto,
-    text: 'Tomar decisões técnicas efetivas e liderar.',
+    text: 'Como tomar decisões técnicas chave para a arquitetura.',
   },
   {
     photo: VersusPhoto,
-    text: 'Monolito vs Microsserviço vs Arquitetura',
+    text: 'Monolito vs Microsserviço vs Arquitetura Modular.',
   },
   {
     photo: UnitTestPhoto,
-    text: 'Testes de unidade, integração e ponta a ponta.',
+    text: 'Testes e qualidade.',
   },
   {
     photo: ArchitecturePhoto,
-    text: 'Arquitetura modular em grande escala',
+    text: 'Arquitetura Modular em grande escala',
   },
   {
     photo: PatternsPhoto,
-    text: 'Padrões de arquitetura enterprise e quando adotar DDD, Hexagonal',
+    text: 'Padrões de arquitetura enterprise como DDD, Arquitetura Hexagonal e Arquitetura Limpa.',
   },
 ]
 
