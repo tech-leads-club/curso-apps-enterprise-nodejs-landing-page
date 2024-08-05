@@ -10,8 +10,8 @@ export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={`/`} element={<Navigate to={`/increva-se`} />} />
-                <Route path={`/increva-se`} element={<LeadsPage />} />
+                <Route path={`/`} element={<Navigate to={`/inscreva-se`} />} />
+                <Route path={`/inscreva-se`} element={<LeadsPage />} />
                 <Route path={`/informacoes`} element={<InformationPage />} />
             </Routes>
         </BrowserRouter>
