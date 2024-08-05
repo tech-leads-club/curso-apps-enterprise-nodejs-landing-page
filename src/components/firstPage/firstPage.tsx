@@ -6,7 +6,11 @@ function FirstPage() {
   return (
     <section className='flex flex-col items-center justify-center bg-circle-pattern '>
       <div className='w-full max-w-[1780px]  pl-5 pt-5 sm:pl-6 lg:pl-10 2xl:pl-14'>
-        <TlcLogo />
+        <div className='max-w-35 max-h-10 sm:w-40 sm:h-14 lg:w-48 lg:h-16' >
+          <a href='https://comece.techleads.club/'>
+            <TlcLogo />
+          </a>
+        </div>
       </div>
 
       <div className='flex flex-col items-center px-5 text-center sm:px-6 lg:px-10 2xl:px-14'>
