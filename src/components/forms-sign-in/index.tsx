@@ -33,7 +33,7 @@ export default function LeftFirstPage() {
       email: sha256(email.trim().toLowerCase())
     })
 
-    window.location.href = 'https://chat.whatsapp.com/LDp2vKdyDc7EwLHCUcOFwk'
+    window.location.href = 'https://chat.whatsapp.com/JQAfi1m8Mo7HzgZP0rx4dM'
   }
 
   return (
