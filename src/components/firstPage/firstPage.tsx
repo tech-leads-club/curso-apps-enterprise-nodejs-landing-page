@@ -37,16 +37,15 @@ function FirstPage() {
 
       <div className='flex flex-col items-center px-5 pb-10 sm:px-6 sm:pb-16 lg:px-10 2xl:px-14'>
         <p className=' mt-5 max-w-[500px] text-center text-15 sm:mt-10 sm:max-w-[760px] sm:text-20 lg:mt-16 lg:max-w-[1100px] lg:text-25 2xl:mt-20 2xl:max-w-[1600px] 2xl:text-35'>
-          Você estuda linguagens, Frameworks, DDD, Arquitetura Hexagonal,
-          Arquitetura Limpa e Microsserviços, mas{' '}
+          Aprenda a evitar overengineering e tirar o melhor proveito de linguagens, Frameworks, DDD, Arquitetura Hexagonal,
+          Arquitetura Limpa, Módulos e Microsserviços{' '}
           <span className='bg-blueBox text-white'>
-            sente que suas soluções não estão entregando valor
+            e crie soluções que entregam valor com menos complexidade.
           </span>{' '}
-          e estão cada vez mais complexas?
         </p>
 
         <p className='my-7 bg-purpleBox px-2 py-1 text-white sm:my-8 sm:px-3 sm:py-2 sm:text-20 lg:my-10 lg:px-4 lg:py-3 lg:text-25 2xl:px-6 2xl:py-5 2xl:text-40'>
-          VOCÊ NÃO ESTÁ SOZINHO!
+          APRENDA OS PRINCIPIOS PARA EVOLUIR A SUA ARQUITETURA!
         </p>
 
         <p className=' 2xl:mb-18 mb-7 max-w-[500px] text-center text-15 sm:mb-10 sm:max-w-[760px] sm:text-20 lg:mb-14 lg:max-w-[1100px] lg:text-25 2xl:max-w-[1600px] 2xl:text-30'>

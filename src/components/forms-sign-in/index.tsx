@@ -42,8 +42,7 @@ export default function LeftFirstPage() {
         <div className='flex max-w-[460px] flex-col items-center justify-center   sm:min-w-[550px] sm:max-w-[530px] md:max-w-[530px] lg:w-[500px] lg:max-w-[500px]  xl:w-[600px]  xl:max-w-[600px] 2xl:ml-10 2xl:min-w-[840px] 2xl:max-w-[840px]'>
           <div className=' lg:text-18 mb-4 w-[60%] text-left  font-segoe font-light sm:mb-8 xl:mb-10 2xl:mb-16 2xl:w-[55%] 2xl:text-30'>
             <p>
-              Workshop ao vivo dias <b>13/08</b> e <b>14/08</b> as{' '}
-              <b>19:00 horas</b>
+              Receba acesso ao meu workshop <b>gratuitamente</b>
             </p>
             <p>Conteudo inédito e exclusivo!</p>
           </div>
@@ -53,7 +52,7 @@ export default function LeftFirstPage() {
           >
             <div className=' mb-8 flex-col pt-8 text-center text-12 lg:mb-12 lg:text-12  xl:mb-10 xl:text-15 2xl:mb-20 2xl:pt-12 2xl:text-15'>
               <p className='text-12  md:text-14 lg:text-15 '>
-                Inscreva-se agora e se prepare para
+                Preencha o formulário agora e se prepare para
               </p>
               <p> aprender a escrever software de qualidade!</p>
             </div>
@@ -133,7 +132,7 @@ export default function LeftFirstPage() {
                   'flex w-[85%] justify-center rounded-md bg-blueButtonLight  px-3 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blueButtonMiddle   md:leading-6 lg:leading-7  2xl:leading-10'
                 }
               >
-                GARANTIR MINHA VAGA
+                QUERO MEU ACESSO
               </button>
             </div>
             <div className='flex'>
